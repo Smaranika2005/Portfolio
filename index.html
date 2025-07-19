@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaranika's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+
+</head>
+<body>
+   <header>
+  <nav class="navbar">
+    <div class="logo">Smaranika<span>.</span></div>
+
+     <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="text">
+        <h1>Hello, it's me <span>Smaranika</span></h1>
+        <h3><span class="typing"></span></h3>
+        <p>Building sleek interfaces while sharpening algorithms — on the path to become a skilled Software Engineer..</p>
+        <a href="files/cv.pdf" class="btn" target="_blank">Download CV</a>
+      </div>
+      <div class="image">
+        <img src="images/logo.png" alt="Profile Picture">
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="images/mainpic.jpg" alt="My Photo">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm a front-end developer with a strong passion for crafting responsive, intuitive, and visually appealing user interfaces. Alongside my love for design and interactivity, I have a deep interest in Data Structures and Algorithms, which helps me write efficient and optimized code. I enjoy solving problems, exploring new technologies, and continuously improving my skills. With a balance of creativity and logic, I'm on a journey to grow into a well-rounded and impactful software engineer.</p>
+
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+        <p class="tab-links" onclick="openTab('certifications')">Certifications</p>
+        <p class="tab-links" onclick="openTab('hobbies')">Hobbies</p>
+      </div>
+
+      <div class="tab-contents active-tab" id="education">
+        <ul>
+          <li><span>2023 - Present(2027)</span><br>B.Tech in CSE - RCCIIT</li>
+          <li><span>2021 - 2023</span><br>ISC(97.5%) - Agrasain Balika Siksha Sadan</li>
+          <li><span>2019 - 2021</span><br>ICSE(98%) - Agrasain Balika Siksha Sadan</li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="certifications">
+        <ul>
+          <li><span>Data Structure and Algorithms</span><br>NPTEL - <a href="https://drive.google.com/drive/folders/1zY6uVs5qFFF7jqdjY9KjbIxWywZGPFDp?usp=drive_link" target="_blank">Learn more</a></li>
+          <li><span>HTML CSS Bootcamp</span><br>Let's Upgrade - <a href="https://drive.google.com/file/d/1Ea-ydRidXyDZCgEiRANYX0BABPG1IWiy/view?usp=sharing" target="_blank">Learn more</a></li>
+          <li><span>Git & Github Bootcamp</span><br>Let's Upgrade - <a href="https://drive.google.com/file/d/1hNF81lfMB6sSOPtVuz0aN4B1pDRP5WWg/view?usp=sharing" target="_blank">Learn more</a></li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="hobbies">
+        <ul>
+          <li><span>Painting</span><br>Ankan Bivakar - Bangiya Sangeet Parishad</li>
+          <li><span>Dancing</span><br>Pursuing Advanced Bharatnatyam - Kalamandalam Calcutta</li>
+          <li><span>Travelling</span><br>Chasing sunsets when I'm not chasing bugs.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section -->
+<section class="skills" id="skills">
+  <div class="skills-content">
+    <h2>My Skills</h2>
+    <div class="skills-boxes">
+      <div class="skills-card">
+        <img src="images/design.png" alt="Web Design">
+        <h3>Web Development</h3>
+        <div class="skill-list">
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>HTML</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>CSS</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Javascript</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card">
+        <img src="images/code.png" alt="Frontend Development">
+        <h3>Platform/Tools</h3>
+          <div class="skill-list">
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Git</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Github</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>VS Code</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Streamlit</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card">
+        <img src="images/opti.png" alt="Code Optimization">
+        <h3>Code Optimization</h3>
+         <div class="skill-list">
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Java</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>Python</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>C</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="images/checkmark.png" class="icon1">
+            <div>
+              <h4>DSA</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- My Work Section -->
+<section class="portfolio" id="portfolio">
+  <h2>My Work</h2>
+  <div class="portfolio-container">
+    <div class="work-card">
+      <img src="images/durgapuja.png" alt="Project 1" />
+      <div class="work-overlay">
+        <h3>Durga Puja Guide</h3>
+        <p>An interactive Durga Puja Guide showcasing popular pandals, built using HTML, CSS, and JavaScript for an engaging festive experience.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Durga-Puja" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://durgapuja2k24.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <img src="images/netflix.png" alt="Project 2" />
+      <div class="work-overlay">
+        <h3>Netflix Clone</h3>
+        <p>A responsive Netflix Clone built using only HTML and CSS, replicating the homepage layout with clean design and hover effects.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Netflix-Clone" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://myclone6.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <img src="images/notepad.png" alt="Project 3" />
+      <div class="work-overlay">
+        <h3>Collaborative Notepad</h3>
+        <p>A real-time Collaborative Notepad built using Python Flask and Socket.IO, enabling multiple users to edit and share notes simultaneously.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Collaborative-Notepad" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://collaborative-notepad-1.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <img src="images/weather_app.png" alt="Project 4" />
+      <div class="work-overlay">
+        <h3>Weather Application</h3>
+        <p>A dynamic Weather Application built using Python and Streamlit that displays real-time weather information for any location.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Weather-Application" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://weather-app19.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <img src="images/currency.png" alt="Project 5" />
+      <div class="work-overlay">
+        <h3>Currency Converter</h3>
+        <p>A responsive Currency Converter built using HTML, CSS, and JavaScript that allows real-time conversion between multiple currencies.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Currency-Converter" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://currency-converter-self-gamma.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <img src="images/geolocate_ip.png" alt="Project 6" />
+      <div class="work-overlay">
+        <h3>Geolocation Finder</h3>
+        <p>A simple Geolocation Finder built using Python Flask and Streamlit that retrieves a user's location based on their IP address.
+</p>
+        <br><div class="button-row"><a href="https://github.com/Smaranika2005/Geolocation_IP" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://geolocationip.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p>If you’d like to collaborate or have any queries, feel free to reach out!</p>
+      <ul>
+        <li><i class="fas fa-envelope"></i> porelsmaranika@gmail.com</li>
+        <li><i class="fas fa-phone-alt"></i> +91 70444 87115</li>
+        <li><i class="fas fa-map-marker-alt"></i> Kolkata, India</li>
+      </ul>
+      <div class="contact-icons">
+        <a href="https://github.com/Smaranika2005" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/smaranika-porel-43a11b291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/smaranika.porel" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/smaranika.porel/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-image">
+      <img src="images/contact.png" alt="Contact Illustration" />
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Smaranika Porel. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
