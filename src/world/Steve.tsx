@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Steve = ({ position, rotation }: { position: [number, number, number], rotation: [number, number, number] }) => {
     return (

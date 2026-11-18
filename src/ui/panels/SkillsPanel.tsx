@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Sword, Shield, Pickaxe, Box, Axe, Server, Shovel, Sparkles } from 'lucide-react';
 
 const getLogo = (name: string) => {

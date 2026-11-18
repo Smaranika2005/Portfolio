@@ -1,27 +1,18 @@
-import React, { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { useKeyboardControls } from '@react-three/drei'
-import { RigidBody, RapierRigidBody, CapsuleCollider, useRapier } from '@react-three/rapier'
-import * as THREE from 'three'
+import { RigidBody, RapierRigidBody, CapsuleCollider } from '@react-three/rapier'
 import { useStore } from '../store/useStore'
-
-const SPEED = 8
-const RUN_SPEED = 14
-const JUMP_FORCE = 10
 
 const Player = ({ position }: { position: [number, number, number] }) => {
     const rigidBody = useRef<RapierRigidBody>(null)
-    const [, getKeys] = useKeyboardControls()
-    const { camera, gl } = useThree()
-    const { rapier, world } = useRapier()
+    const { camera } = useThree()
 
-    const activeSection = useStore((state) => state.activeSection)
     const started = useStore((state) => state.started)
 
     // To handle mouse movement dynamically for slow panning camera
     const timeRef = useRef(0)
 
-    useFrame((state, delta) => {
+    useFrame((_, delta) => {
         // We completely shut off physics walking and simply provide a cinematic orbit
 
         if (!started) {

@@ -1,15 +1,14 @@
-import React, { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Sky, Environment, Cloud, Stars } from '@react-three/drei'
-import { EffectComposer, Bloom, DepthOfField, Vignette } from '@react-three/postprocessing'
+import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing'
 import Player from './Player'
 import Terrain from './Terrain'
 import Steve from './Steve'
 import { useStore } from '../store/useStore'
 import { RigidBody } from '@react-three/rapier'
-import * as THREE from 'three'
 
 // Simple placeholder for interactive locations
-const LocationBox = ({ position, color, name, label }: { position: [number, number, number], color: string, name: string, label: string }) => {
+const LocationBox = ({ position, color, name }: { position: [number, number, number], color: string, name: string }) => {
     const setActiveSection = useStore((state) => state.setActiveSection)
     const activeSection = useStore((state) => state.activeSection)
     const [hovered, setHovered] = useState(false)
@@ -82,24 +81,23 @@ const World = () => {
 
             {/* Locations */}
             {/* About Me - Cabin */}
-            <LocationBox position={[-15, 2, -15]} color="#8B4513" name="about" label="Cabin (About)" />
+            <LocationBox position={[-15, 2, -15]} color="#8B4513" name="about" />
 
             {/* Projects - Village */}
-            <LocationBox position={[20, 2, -10]} color="#A9A9A9" name="projects" label="Village (Projects)" />
+            <LocationBox position={[20, 2, -10]} color="#A9A9A9" name="projects" />
 
             {/* Skills - Mine */}
-            <LocationBox position={[0, -5, 20]} color="#2F4F4F" name="skills" label="Mine (Skills)" />
+            <LocationBox position={[0, -5, 20]} color="#2F4F4F" name="skills" />
 
             {/* Experience - Portal */}
-            <LocationBox position={[-20, 2, 15]} color="#4B0082" name="experience" label="Portal" />
+            <LocationBox position={[-20, 2, 15]} color="#4B0082" name="experience" />
 
             {/* Contact - Floating Island */}
-            <LocationBox position={[10, 10, 25]} color="#E6E6FA" name="contact" label="Crystal" />
+            <LocationBox position={[10, 10, 25]} color="#E6E6FA" name="contact" />
 
             {/* Post Processing for Cinematic Feel */}
-            <EffectComposer disableNormalPass>
+            <EffectComposer>
                 <Bloom luminanceThreshold={1} mipmapBlur intensity={1.5} />
-                {/* Vignette applies a cinematic border shadow */}
                 <Vignette eskil={false} offset={0.1} darkness={1.1} />
             </EffectComposer>
         </>

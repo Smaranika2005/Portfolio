@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Download } from 'lucide-react';
 
 const ContactPanel = () => {

@@ -10,7 +10,7 @@ const Page = React.forwardRef((props: any, ref: any) => {
     );
 });
 Page.displayName = 'Page';
-import { BookOpen, Calendar, CheckSquare, School, Star, GraduationCap, Library, Building, Map } from 'lucide-react';
+import { BookOpen, Calendar, Star, GraduationCap, Library, Building, Map } from 'lucide-react';
 
 const educationData = [
     {
