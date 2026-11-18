@@ -39,7 +39,7 @@ const Overlay = () => {
                         style={
                             activeSection === 'experience'
                                 ? {
-                                    backgroundImage: 'linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.8)), url(/experience_bg.png)',
+                                    backgroundImage: 'linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.8)), url(/experience_bg.webp)',
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                 }

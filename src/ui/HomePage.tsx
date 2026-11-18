@@ -140,7 +140,7 @@ const HomePage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         className="w-full h-full relative bg-no-repeat"
-                        style={{ backgroundImage: 'url("/experience_bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                        style={{ backgroundImage: 'url("/experience_bg.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                         <ExperiencePanelView />
                     </motion.div>
@@ -151,7 +151,7 @@ const HomePage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         className="w-full h-full relative border-l-4 border-black/50 bg-no-repeat"
-                        style={{ backgroundImage: 'url("/projects bg.png")', backgroundSize: '100% 100%' }}
+                        style={{ backgroundImage: 'url("/projects bg.webp")', backgroundSize: '100% 100%' }}
                     >
                         {/* Floating Interaction Messages (Hooks) */}
                         <AnimatePresence>
@@ -232,7 +232,7 @@ const HomePage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         className="w-full h-full relative border-l-4 border-black/50 bg-no-repeat"
-                        style={{ backgroundImage: 'url("/contact_bg.png")', backgroundSize: '100% 100%' }}
+                        style={{ backgroundImage: 'url("/contact_bg.webp")', backgroundSize: '100% 100%' }}
                     >
                         {/* Floating Interaction Messages (Hooks) */}
                         <AnimatePresence>

@@ -36,7 +36,7 @@ const LandingPage = () => {
             className="absolute inset-0 flex flex-col justify-center sm:justify-start pointer-events-auto z-50 text-white p-6 sm:pt-[12vh] sm:px-[6vw] lg:pt-[15vh] lg:pl-[8vw]"
         >
             {/* Mobile Background */}
-            <div className="absolute inset-0 block sm:hidden -z-10" style={{ backgroundImage: 'url("/mobile_portrait.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+            <div className="absolute inset-0 block sm:hidden -z-10" style={{ backgroundImage: 'url("/mobile_portrait.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
             {/* Desktop Background */}
             <div className="absolute inset-0 hidden sm:block -z-10" style={{ backgroundImage: 'url("/bg.webp?v=3")', backgroundSize: '100% 100%' }} />

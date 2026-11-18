@@ -300,7 +300,7 @@ pre {
 
 .sword-cursor,
 .sword-cursor * {
-  cursor: url('/sword.png?v=2') 0 0, auto !important;
+  cursor: url('/sword.webp?v=2') 0 0, auto !important;
 }
 
 /* WOOD HOTBAR SLOT STYLES */
